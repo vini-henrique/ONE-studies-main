@@ -4,10 +4,24 @@
     padding: 0;
 }
 body{
-    height: 100vh;
     box-sizing: border-box;
     background-color: #000000;
     color: white;
+}
+
+.cabecalho{
+  padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu{
+  display: flex;
+  gap: 80px;
+}
+.cabecalho__menu__link{
+  font-family: "montserrat",sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color:#22D4FD
+  text-decoration:none;
 }
 .titulo-destaque{
     color: #22D4FD;
@@ -17,7 +31,7 @@ body{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
+    padding: 8% 15%;
 }
 
 .imagem-vinicius{
@@ -44,18 +58,44 @@ body{
      }
   .apresentacao__links{
     display:flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+  }
+  .apresentacao__links__subtitulo{
+    font-family: "krona one", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
   }
 
   .apresentacao__links__link{
-    background-color: #22D4FD;
-    width: 280px;
+    /* background-color: #22D4FD; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
     text-align: center;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 24px;
     font-weight: 600;
     padding: 21.5px 0;
     text-decoration: none;
-    color: black;
+    color: #f6f6f6;
+    border: 2px solid #22D4FD;
     font-family: 'montserrat', sans-serif;
+  }
+  .apresentacao__links__link:hover{
+    background-color: #272727;
+    cursor:pointer;
+  }
+
+  .rodape{
+    color:#000000;
+    background-color:#22D4FD;
+    padding: 24px;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
   }
